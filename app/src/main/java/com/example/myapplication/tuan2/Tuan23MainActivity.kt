@@ -16,7 +16,7 @@ class Tuan23MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tuan23_main)
         var lv1 = findViewById<ListView>(R.id.tuan23lv1)
         // dinh nghia nguon du lieu
-        var arr = arrayOf("Item1", "Item2","Item3", "Item4")
+        var arr = arrayOf("Item1", "Item2","Item3", "Item4","Item5", "Item6","Item7", "Item8" )
         val adapter1 = ArrayAdapter(this, android.R.layout.simple_list_item_1,arr)
         lv1.adapter=adapter1
 //        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
