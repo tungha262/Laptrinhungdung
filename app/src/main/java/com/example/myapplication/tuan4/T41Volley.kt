@@ -16,7 +16,7 @@ class Tuan41Volley {
         //1. Tạo request
         val queue = Volley.newRequestQueue(context)
         //2.  Url
-        val url = "https://hungnttg.github.io/array_json_new.json";
+        val url = "https://api.npoint.io/39ffdcf36d89f1bf6e19";
         // 3. Goi Request
         // mang cac doi tuong -> goi mang truoc, doi tuong sau
         // JsonArrayRequest (url, neu thanh cong, that bai)
@@ -25,7 +25,9 @@ class Tuan41Volley {
                 try{
                     val person = response.getJSONObject(i);
                     val id = person.getString("id")
-                    val name = person.getString("name")
+                    val fn = person.getString("firstname")
+                    val ln = person.getString("lastname")
+                    val name = fn + " " + ln
                     val email = person.getString("email")
                     // dua tat ca vao chuoi
                     ls.add(T4Contact(id, name, email))
