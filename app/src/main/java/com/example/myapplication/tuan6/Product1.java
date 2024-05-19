@@ -1,16 +1,16 @@
 package com.example.myapplication.tuan6;
 
-public class Product {
+public class Product1 {
     private String styleID;
     private String brand;
     private String price;
     private String additionalInfo;
     private String searchImage;
 
-    public Product() {
+    public Product1() {
     }
 
-    public Product(String styleID, String brand, String price, String additionalInfo, String searchImage) {
+    public Product1(String styleID, String brand, String price, String additionalInfo, String searchImage) {
         this.styleID = styleID;
         this.brand = brand;
         this.price = price;

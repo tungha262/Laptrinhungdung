@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,10 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".tuan6.T6MainActivity"
+            android:name=".tuan61.Tuan61MainActivity"
             android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".tuan6.T6MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,12 +31,10 @@
         </activity>
         <activity
             android:name=".tuan4.T41VolleyMainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".tuan4.Tuan4VolleyMainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".tuan3.T3ListviewMainActivity"
             android:exported="true" />

@@ -28,8 +28,8 @@ import java.util.List;
 
 public class T6MainActivity extends AppCompatActivity {
     private ListView listView;
-    private ProductAdapter adapter;
-    private List<Product> productList;
+    private ProductAdapter1 adapter;
+    private List<Product1> productList;
 
 
     @Override
@@ -39,7 +39,7 @@ public class T6MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_t6_main);
         listView = findViewById(R.id.t6_list_view);
         productList = new ArrayList<>();
-        adapter = new ProductAdapter(this,productList);
+        adapter = new ProductAdapter1(this,productList);
         listView.setAdapter(adapter);
 
         // get data from API
@@ -94,7 +94,7 @@ public class T6MainActivity extends AppCompatActivity {
                         String additionalInfo = productObject.getString("product_additional_info");
                         String image = productObject.getString("search_image");
 
-                        Product product = new Product(styleID, brand, price, additionalInfo, image);
+                        Product1 product = new Product1(styleID, brand, price, additionalInfo, image);
                         productList.add(product);
                     }
                     adapter.notifyDataSetChanged(); // update to adapter

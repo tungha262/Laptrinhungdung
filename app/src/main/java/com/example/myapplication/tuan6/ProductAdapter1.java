@@ -14,11 +14,11 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 
-public class ProductAdapter extends BaseAdapter {
+public class ProductAdapter1 extends BaseAdapter {
     private Context mcontext;
-    private List<Product> mProductList;
+    private List<Product1> mProductList;
 
-    public ProductAdapter(Context context, List<Product> productList) {
+    public ProductAdapter1(Context context, List<Product1> productList) {
         this.mcontext = context;
         this.mProductList = productList;
     }
@@ -59,7 +59,7 @@ public class ProductAdapter extends BaseAdapter {
         }
 
         //set data for view
-        Product product = mProductList.get(position);
+        Product1 product = mProductList.get(position);
         if(product != null){
             Picasso.get().load(product.getSearchImage())
                     .placeholder(R.drawable.ic_launcher_background)
