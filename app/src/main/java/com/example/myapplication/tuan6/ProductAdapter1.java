@@ -1,6 +1,7 @@
 package com.example.myapplication.tuan6;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,6 +72,17 @@ public class ProductAdapter1 extends BaseAdapter {
             holder.additionalInfoTv.setText(product.getAdditionalInfo());
 
         }
+        // xu ly xu kien
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Product1 product = mProductList.get(position); // lay ve 1 doi tuong
+                Intent intent = new Intent(mcontext, Tuan6DetailActivity.class);
+                intent.putExtra("PRODUCT", product); // dong goi product
+                mcontext.startActivity(intent); // van chuyen product sang detail
+            }
+        });
+
         return convertView;
     }
 

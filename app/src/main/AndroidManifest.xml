@@ -16,10 +16,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".tuan6.Tuan6DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".tuan61.Tuan61MainActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".tuan6.T6MainActivity"
             android:exported="true">
@@ -31,7 +32,7 @@
         </activity>
         <activity
             android:name=".tuan4.T41VolleyMainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".tuan4.Tuan4VolleyMainActivity"
             android:exported="true" />

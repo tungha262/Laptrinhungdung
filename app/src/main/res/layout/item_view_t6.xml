@@ -5,11 +5,11 @@
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/item_product_imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/item_product_imageView"
-        android:src="@color/cardview_dark_background"
-        />
+        android:src="@color/cardview_dark_background" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
